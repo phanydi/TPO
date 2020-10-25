@@ -2,9 +2,7 @@ package Main;
 
 public class Main {
     public static void main(String[] args) {
-
-        CsvWritter writter = new CsvWritter("result.csv");
-        writter.printResult(-10.0 ,10.0, 0.5);
+        CsvWritter writter = new CsvWritter("result.csv", -10.0 ,10.0, 0.01);
     }
 
     static void valueTest(){

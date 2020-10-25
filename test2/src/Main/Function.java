@@ -13,13 +13,14 @@ public class Function {
         return pow(( pow(sec(x),2) + csc(x) + cos(x)) * cos(x),2);
     }
 
-    public double LogarFunc(double x){
+    public static double LogarFunc(double x){
         //System.out.println(ln(x) + " " + log_3(x) + " " + log_5(x));
         return (pow((log_5(x) - log_3(x)) - log_3(x), 2) / pow(ln(x), 3)) / log_5(x);
     }
 
     public static double preProcess(double x){ // Bring x down to range [-2*PI, 0]
         x = x % (Math.PI*2);
+        while (x>0) x-= Math.PI*2;
         return x;
     }
 
@@ -46,8 +47,8 @@ public class Function {
         x = preProcess(x);
         //System.out.println(x);
         double sinx = sin(x);
-        if ((x < -Math.PI/2) && (x > -3*Math.PI/2)) return -Math.sqrt(1-sinx*sinx);
-            else return Math.sqrt(1- sinx*sinx);
+        if ((x <= -Math.PI/2) && (x >= -3*Math.PI/2)) return -Math.sqrt(1-sinx*sinx);
+            else return Math.sqrt(1-sinx*sinx);
     }
 
     public static double sec(double x){
@@ -67,7 +68,7 @@ public class Function {
         return res;
     }
 
-    public double ln(double x){
+    public static double ln(double x){
         double thisEps = 1E-10;
         double before, after, xn, base;
         int n;
@@ -87,11 +88,11 @@ public class Function {
         return 2*after;
     }
 
-    public double log_3(double x){
+    public static double log_3(double x){
         return ln(x)/ln(3);
     }
 
-    public double log_5(double x){
+    public static double log_5(double x){
         return ln(x)/ln(5);
     }
 }
