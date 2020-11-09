@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="BuyInsuranceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-11-09T00:01:13" hostname="DESKTOP-GL60DE0" time="23.867">
+  <properties/>
+  <testcase name="buyInsurance" classname="BuyInsuranceTest" time="23.867"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[1604880074305	geckodriver	INFO	Listening on 127.0.0.1:40764
+1604880074701	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\phany\\AppData\\Local\\Temp\\rust_mozprofile3HTIEN"
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1604880078837	Marionette	INFO	Listening on port 62765
+1604880078917	Marionette	WARN	TLS certificate errors will be ignored for this session
+Nov 09, 2020 3:01:18 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+JavaScript error: , line 0: uncaught exception: Object
+JavaScript error: , line 0: uncaught exception: Failed to transfer cookie.
+JavaScript error: , line 0: uncaught exception: Failed to transfer cookie.
+JavaScript error: , line 0: uncaught exception: Failed to transfer cookie.
+JavaScript error: , line 0: uncaught exception: Failed to transfer cookie.
+JavaScript error: , line 0: uncaught exception: Failed to transfer cookie.
+JavaScript error: , line 0: uncaught exception: Failed to transfer cookie.
+JavaScript error: , line 0: uncaught exception: Failed to transfer cookie.
+JavaScript error: , line 0: uncaught exception: Failed to transfer cookie.
+Can't find symbol 'eglSwapBuffersWithDamageEXT'.
+1604880093663	Marionette	INFO	Stopped listening on port 62765
+console.error: services.settings: 
+  main/nimbus-desktop-experiments Signature failed  TypeError: NetworkError when attempting to fetch resource.
+console.error: services.settings: 
+  main/message-groups Signature failed  TypeError: NetworkError when attempting to fetch resource.
+console.error: services.settings: 
+  main/fxmonitor-breaches Signature failed  TypeError: NetworkError when attempting to fetch resource.
+console.error: services.settings: 
+  main/partitioning-exempt-urls Signature failed  TypeError: NetworkError when attempting to fetch resource.
+[Parent 2332, Gecko_IOThread] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc, line 166
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 554: NS_ERROR_FAILURE
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+]]></system-err>
+</testsuite>
